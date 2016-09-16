@@ -31,6 +31,7 @@ section{
 
 .section-title{
 	padding:10px;
+    padding-bottom: 20px;
 	background:#0383c0;
 	color:#fff;
 }
@@ -153,6 +154,12 @@ h4{
     transform: rotate(90deg);
 }
 
+.img-center{
+    display:block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
 .img-been{
     display: block;
     max-width:259px !important;
@@ -260,6 +267,22 @@ td, th {
     display: table-cell;
 }
 
+.panel-body{
+    color:#0383c0
+}
+
+.section-dk-gray {
+    background-color: #ccc !important;
+    background-color: rgb(12, 12, 12);
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    margin-top: -15px;
+}
 footer{
 	text-align:center;
 	height:60px;
