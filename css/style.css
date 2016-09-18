@@ -23,7 +23,7 @@ section{
 	padding:60px 0;
 }
 
-.section-technology{/* #f8f8f8, #0383c0 */
+.section-technology{
 	background:#f8f8f8;
 	color:#777;
 	padding:60px 0;
@@ -154,6 +154,19 @@ h4{
     transform: rotate(90deg);
 }
 
+.slider-size{
+    background-color: #4d4d4d !important;
+}
+
+.slider-size > img {
+        max-height:350px !important;
+        width: auto !important;
+        height: 100% !important;
+        display:block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+
 .img-center{
     display:block !important;
     margin-left: auto !important;
@@ -170,6 +183,7 @@ h4{
     padding-bottom: 10 !importantpx;
     margin-bottom: 10px !important;
 }
+
 .places-been{
     display: block;
     padding-top: 15px !important;
