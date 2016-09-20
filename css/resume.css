@@ -11,7 +11,13 @@ html {
 }
 
 body {
-  margin: 0;
+    width: 90% !important;
+    height: auto !important;
+    min-height: 100% !important;
+    border-radius: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin: 0;
 }
 
 article,
@@ -5902,8 +5908,9 @@ a.thumbnail.active {
 .media-left,
 .media-right,
 .media-body {
-  display: table-cell;
-  vertical-align: top;
+    display: table-cell;
+    vertical-align: top;
+    color:#3b5a76;
 }
 
 .media-middle {
@@ -7683,6 +7690,13 @@ header h1 {
 .media {
   background: #ededed;
   padding: 10px;
+}
+
+.media-about {
+  /*background: #ededed;*/
+  background: #fff;
+  padding: 10px;
+  color: #000;
 }
 
 .work-list li {

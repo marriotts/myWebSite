@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Marriott Family</title>
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>    <!-- Bootstrap core CSS -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Favicon references -->
@@ -60,258 +63,193 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                      <!-- Indicators -->
-                      <!-- <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="8"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="9"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="10"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="11"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="12"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="13"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="14"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="15"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="16"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="17"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="18"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="19"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="20"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="21"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="22"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="23"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="24"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="25"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="26"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="27"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="28"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="29"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="30"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="31"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="32"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="33"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="34"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="35"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="36"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="37"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="38"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="39"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="40"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="41"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="42"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="43"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="44"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="45"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="46"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="46"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="48"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="49"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="50"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="51"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="52"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="53"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="54"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="55"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="56"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="57"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="58"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="59"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="60"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="61"></li>
-                      </ol> -->
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="10000">
 
                       <!-- Wrapper for slides -->
                       <div class="carousel-inner" role="listbox">
                         <!-- Simon -->
                         <div class="item active  slider-size">
-                          <a href="#"><img src="img/gallery/simon001.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/simon001.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/simon002.jpg"><img src="img/gallery/simon002.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/simon002.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/simon003.jpg"><img src="img/gallery/simon003.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/simon003.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/simon004.jpg"><img src="img/gallery/simon004.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/simon004.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/simon005.jpg"><img src="img/gallery/simon005.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/simon005.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/simon006.jpg"><img src="img/gallery/simon006.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/simon006.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/simon007.jpg"><img src="img/gallery/simon007.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/simon007.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/simon008.jpg"><img src="img/gallery/simon008.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/simon008.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/simon009.jpg"><img src="img/gallery/simon009.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/simon009.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/simon010.jpg"><img src="img/gallery/simon010.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/simon010.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/simon011.jpg"><img src="img/gallery/simon011.jpg" class="img-thumbnail img-responsive"></a>
+                          <a href="img/gallery/simon011.jpg" data-lightbox="gallery" data-title="Simon Image Eleven"><img src="img/gallery/simon011.jpg" class="img-thumbnail img-responsive"></a>
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/simon012.jpg"><img src="img/gallery/simon012.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/simon012.jpg" class="img-thumbnail img-responsive">
                         </div>
                        <!-- Sharon -->
                        <div class="item  slider-size">
-                          <a href="img/gallery/sharon001.jpg"><img src="img/gallery/sharon001.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/sharon001.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/sharon002.jpg"><img src="img/gallery/sharon002.jpg"  class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/sharon002.jpg"  class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/sharon003.jpg"><img src="img/gallery/sharon003.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/sharon003.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/sharon004.jpg"><img src="img/gallery/sharon004.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/sharon004.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/sharon005.jpg"><img src="img/gallery/sharon005.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/sharon005.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/sharon006.jpg"><img src="img/gallery/sharon006.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/sharon006.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/sharon007.jpg"><img src="img/gallery/sharon007.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/sharon007.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/sharon008.jpg"><img src="img/gallery/sharon008.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/sharon008.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/sharon009.jpg"><img src="img/gallery/sharon009.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/sharon009.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/sharon010.jpg"><img src="img/gallery/sharon010.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/sharon010.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/sharon011.jpg"><img src="img/gallery/sharon011.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/sharon011.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/sharon012.jpg"><img src="img/gallery/sharon012.jpg" class="img-thumbnail img-responsive"></a>
-                        </div>
+                          <img src="img/gallery/sharon012.jpg" class="img-thumbnail img-responsive">
+                        </div>2q
                         <!-- Danielle -->
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle001.jpg"><img src="img/gallery/danielle001.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle001.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle002.jpg"><img src="img/gallery/danielle002.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle002.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle003.jpg"><img src="img/gallery/danielle003.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle003.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle004.jpg"><img src="img/gallery/danielle004.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle004.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle005.jpg"><img src="img/gallery/danielle005.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle005.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle006.jpg"><img src="img/gallery/danielle006.jpg" class="img-thumbnail img-responsive">
+                          <img src="img/gallery/danielle006.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle007.jpg"><img src="img/gallery/danielle007.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle007.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle008.jpg"><img src="img/gallery/danielle008.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle008.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle009.jpg"><img src="img/gallery/danielle009.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle009.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle010.jpg"><img src="img/gallery/danielle010.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle010.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle011.jpg"><img src="img/gallery/danielle011.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle011.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle012.jpg"><img src="img/gallery/danielle012.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle012.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle013.jpg"><img src="img/gallery/danielle013.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle013.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle014.jpg"><img src="img/gallery/danielle014.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle014.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle015.jpg"><img src="img/gallery/danielle015.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle015.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle016.jpg"><img src="img/gallery/danielle016.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle016.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle017.jpg"><img src="img/gallery/danielle017.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle017.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle018.jpg"><img src="img/gallery/danielle018.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle018.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle019.jpg"><img src="img/gallery/danielle019.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle019.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle020.jpg"><img src="img/gallery/danielle020.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle020.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle021.jpg"><img src="img/gallery/danielle021.jpg" class="img-thumbnail img-responsive"></a>
+                          img src="img/gallery/danielle021.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle022.jpg"><img src="img/gallery/danielle022.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle022.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/danielle023.jpg"><img src="img/gallery/danielle023.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle023.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="#"></a><img src="img/gallery/danielle024.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/danielle024.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <!-- Snowy and misc -->
                         <div class="item  slider-size">
-                          <a href="img/gallery/snowy001.jpg"><img src="img/gallery/snowy001.jpg" class="img-thumbnail img-responsive">
+                          <img src="img/gallery/snowy001.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/snowy002.jpg"><img src="img/gallery/snowy002.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/snowy002.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/snowy003.jpg"><img src="img/gallery/snowy003.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/snowy003.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/snowy004.jpg"><img src="img/gallery/snowy004.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/snowy004.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/snowy005.jpg"><img src="img/gallery/snowy005.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/snowy005.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/snowy006.jpg"><img src="img/gallery/snowy006.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/snowy006.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/snowy007.jpg"><img src="img/gallery/snowy007.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/snowy007.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="#img/gallery/snowy008.jpg"><img src="img/gallery/snowy008.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/snowy008.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="#img/gallery/snowy009.jpg"><img src="img/gallery/snowy009.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/snowy009.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/snowy010.jpg"><img src="img/gallery/snowy010.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/snowy010.jpg" class="img-thumbnail img-responsive">
                         </div>                          
                         <div class="item  slider-size">
-                          <a href="img/gallery/threegens001.jpg"><img src="img/gallery/threegens001.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/threegens001.jpg" class="img-thumbnail img-responsive">
                         </div>
                         <div class="item  slider-size">
-                          <a href="img/gallery/mr_maker001.jpg"><img src="img/gallery/mr_maker001.jpg" class="img-thumbnail img-responsive"></a>
+                          <img src="img/gallery/mr_maker001.jpg" class="img-thumbnail img-responsive">
                         </div>
                       </div>
 
@@ -326,16 +264,16 @@
                       </a>
                     </div>
                 </div>
-            </div
+            </div>
         </div>
     </section>
-
+    <!-- END OF CAROUSEL -->
 
     <!-- Images Section -->
     <section>
         <div class="container">
 
-              <!-- Nav tabs -->
+              <!-- Image Nav tabs -->
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All Photos</a></li>
                 <li role="presentation"><a href="#simon" aria-controls="simon" role="tab" data-toggle="tab">Simon</a></li>
@@ -345,61 +283,61 @@
               </ul>
               <br />
 
-              <!-- Tab panes -->
+              <!-- Image Tab panes -->
               <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="all">
                    <!-- Start of Simon's Group -->
                     <div class="row"> <!-- Row One -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon001.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/simon001.jpg" data-lightbox="gallery" data-title="Simon Image One"><img src="img/gallery/simon001.jpg" class="img-thumbnail"></a>
                             <div class="title">Simon Image One</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon002.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/simon002.jpg" data-lightbox="gallery" data-title="Simon Image Two"><img src="img/gallery/simon002.jpg" class="img-thumbnail"></a>
                             <div class="title">Simon Image Two</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon003.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/simon003.jpg" data-lightbox="gallery" data-title="Simon Image Three"><img src="img/gallery/simon003.jpg" class="img-thumbnail"></a>
                             <div class="title">Simon Image Three</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon004.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/simon004.jpg" data-lightbox="gallery" data-title="Simon Image Four"><img src="img/gallery/simon004.jpg" class="img-thumbnail"></a>
                             <div class="title">Simon Image Four</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon005.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Five</div>
+                            <a href="img/gallery/simon005.jpg" data-lightbox="gallery" data-title="Simon in Nottingham Forest Golden Anniversary shirt"><img src="img/gallery/simon005.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon in Nottingham Forest Golden Anniversary shirt</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon006.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Six</div>
+                            <a href="img/gallery/simon006.jpg" data-lightbox="gallery" data-title="Simon's fashion statement 2015'"><img src="img/gallery/simon006.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon's fashion statement 2015</div>
                         </div>
                     </div> <!-- End of Row One -->
 
                     <div class="row"> <!-- Row Two -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon007.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/simon007.jpg" data-lightbox="gallery" data-title="Simon Image Seven"><img src="img/gallery/simon007.jpg" class="img-thumbnail"></a>
                             <div class="title">Simon Image Seven</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon008.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Eight</div>
+                            <a href="img/gallery/simon008.jpg" data-lightbox="gallery" data-title="Simon and Danielle, 2015"><img src="img/gallery/simon008.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon and Danielle, 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon009.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Nine</div>
+                            <a href="img/gallery/simon009.jpg" data-lightbox="gallery" data-title="Simon - Xmas Jumper 2014"><img src="img/gallery/simon009.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon - Xmas Jumper 2014</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon010.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Ten</div>
+                            <a href="img/gallery/simon010.jpg" data-lightbox="gallery" data-title="Simon with an Eagle Owl, 2015"><img src="img/gallery/simon010.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon with an Eagle Owl, 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon011.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Eleven</div>
+                            <a href="img/gallery/simon011.jpg" data-lightbox="gallery" data-title="Simon ~ Proud Dad with one day old Danielle"><img src="img/gallery/simon011.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon ~ Proud Dad</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon012.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Twelve</div>
+                            <a href="img/gallery/simon012.jpg" data-lightbox="gallery" data-title="Simon sporting a goatie"><img src="img/gallery/simon012.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon sporting a goatie</div>
                         </div>
                     </div> <!-- End of Row Two -->
                     <!-- End of Simon's Group -->
@@ -407,55 +345,55 @@
                     <!-- Start of Sharon's Group -->
                     <div class="row"> <!-- Row One -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon001.JPG" class="img-thumbnail"></a>
+                            <a href="img/gallery/sharon001.jpg" data-lightbox="gallery" data-title="Sharon Image One"><img src="img/gallery/sharon001.JPG" class="img-thumbnail"></a>
                             <div class="title">Sharon Image One</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon002.jpg" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Two</div>
+                            <a href="img/gallery/sharon002.jpg" data-lightbox="gallery" data-title="Cheers Sharon"><img src="img/gallery/sharon002.jpg" class="img-thumbnail"></a>
+                            <div class="title">Cheers Sharon</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon003.JPG" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Three</div>
+                            <a href="img/gallery/sharon003.jpg" data-lightbox="gallery" data-title="Sharon and Danielle at 'The Farmers', Yaxley"><img src="img/gallery/sharon003.JPG" class="img-thumbnail"></a>
+                            <div class="title">Sharon and Danielle at 'The Farmers', Yaxley</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon004.JPG" class="img-thumbnail"></a>
+                            <a href="img/gallery/sharon004.jpg" data-lightbox="gallery" data-title="Sharon Image Four"><img src="img/gallery/sharon004.JPG" class="img-thumbnail"></a>
                             <div class="title">Sharon Image Four</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon005.jpg" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Five</div>
+                            <a href="img/gallery/sharon005.jpg" data-lightbox="gallery" data-title="Sharon, Danielle and the CocaCola Lorry December 2015"><img src="img/gallery/sharon005.jpg" class="img-thumbnail"></a>
+                            <div class="title">Sharon December 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon006.JPG" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Six</div>
+                            <a href="img/gallery/sharon006.jpg" data-lightbox="gallery" data-title="Sharon's birthday 2014"><img src="img/gallery/sharon006.JPG" class="img-thumbnail"></a>
+                            <div class="title">Sharon's birthday 2014</div>
                         </div>
                     </div> <!-- End of Row One -->
 
                     <div class="row"> <!-- Row Two -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon007.JPG" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Seven</div>
+                            <a href="img/gallery/sharon007.jpg" data-lightbox="gallery" data-title="Sharon's birthday 2014'"><img src="img/gallery/sharon007.JPG" class="img-thumbnail"></a>
+                            <div class="title">Sharon's birthday 2014</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon008.jpg" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Eight</div>
+                            <a href="img/gallery/sharon008.jpg" data-lightbox="gallery" data-title="Sharon with Danielle at Skegness 2015"><img src="img/gallery/sharon008.jpg" class="img-thumbnail"></a>
+                            <div class="title">Sharon at Skegness 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon009.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/sharon009.jpg" data-lightbox="gallery" data-title="Sharon Image Nine"><img src="img/gallery/sharon009.jpg" class="img-thumbnail"></a>
                             <div class="title">Sharon Image Nine</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon010.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/sharon010.jpg" data-lightbox="gallery" data-title="Sharon Image Ten"><img src="img/gallery/sharon010.jpg" class="img-thumbnail"></a>
                             <div class="title">Sharon Image Ten</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon011.jpg" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Eleven</div>
+                            <a href="img/gallery/sharon011.jpg" data-lightbox="gallery" data-title="Sharon wrapping up warm"><img src="img/gallery/sharon011.jpg" class="img-thumbnail"></a>
+                            <div class="title">Sharon wrapping up warm</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon012.jpg" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Twelve</div>
+                            <a href="img/gallery/sharon012.jpg" data-lightbox="gallery" data-title="Sharon with Danielle at 3-hours old"><img src="img/gallery/sharon012.jpg" class="img-thumbnail"></a>
+                            <div class="title">Sharon with Danielle</div>
                         </div>
                     </div> <!-- End of Row Two -->
                     <!-- End of Sharon's Group -->
@@ -463,109 +401,108 @@
                     <!-- Start of Danielle's Group -->
                     <div class="row"> <!-- Row One -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle001.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image One</div>
+                            <a href="img/gallery/danielle001.jpg" data-lightbox="gallery" data-title="Danielle in her cot"><img src="img/gallery/danielle001.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle in her cot</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle002.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Two</div>
+                            <a href="img/gallery/danielle002.jpg" data-lightbox="gallery" data-title="Danielle ~ One year old"><img src="img/gallery/danielle002.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle ~ One year old</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle003.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Three</div>
+                            <a href="img/gallery/danielle003.jpg" data-lightbox="gallery" data-title="Danielle Pre-school photo 2014"><img src="img/gallery/danielle003.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle Pre-school 2014</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle004.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Four</div>
+                            <a href="img/gallery/danielle004.jpg" data-lightbox="gallery" data-title="Danielle Pre-school photo 2014"><img src="img/gallery/danielle004.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle Pre-school 2014</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle005.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Five</div>
+                            <a href="img/gallery/danielle005.jpg" data-lightbox="gallery" data-title="Danielle aged 1-day with Nana Marriott"><img src="img/gallery/danielle005.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle with Nana Marriott</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle006.JPG" class="img-thumbnail"></a>
+                            <a href="img/gallery/danielle006.jpg" data-lightbox="gallery" data-title="Danielle Image Six"><img src="img/gallery/danielle006.JPG" class="img-thumbnail"></a>
                             <div class="title">Danielle Image Six</div>
                         </div>
                     </div> <!-- End of Row One -->
 
                     <div class="row"> <!-- Row Two -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle007.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Seven</div>
+                            <a href="img/gallery/danielle007.jpg" data-lightbox="gallery" data-title="Danielle Pre-school photo 2015"><img src="img/gallery/danielle007.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle Pre-school 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle008.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Eight</div>
+                            <a href="img/gallery/danielle008.jpg" data-lightbox="gallery" data-title="Danielle in her playpen"><img src="img/gallery/danielle008.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle in her playpen</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle009.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Nine</div>
+                            <a href="img/gallery/danielle009.jpg" data-lightbox="gallery" data-title="Danielle Xmas Day 2015"><img src="img/gallery/danielle009.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle Xmas Day 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle010.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Ten</div>
+                            <a href="img/gallery/danielle010.jpg" data-lightbox="gallery" data-title="Danielle meal out at 'The Farmers', Yaxley"><img src="img/gallery/danielle010.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle at 'The Farmers', Yaxley</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle011.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Eleven</div>
+                            <a href="img/gallery/danielle011.jpg" data-lightbox="gallery" data-title="Danielle Pre-school photo 2015"><img src="img/gallery/danielle011.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle Pre-school 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle012.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Twelve</div>
+                            <a href="img/gallery/danielle012.jpg" data-lightbox="gallery" data-title="Danielle with Nanny Coyne ~ Xmas 2013"><img src="img/gallery/danielle012.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle with Nanny Coyne</div>
                         </div>
                     </div> <!-- End of Row Two -->
 
-
                     <div class="row"> <!-- Row Three -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle013.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Thirteen</div>
+                            <a href="img/gallery/danielle013.jpg" data-lightbox="gallery" data-title="Danielle driving Daddy's Car"><img src="img/gallery/danielle013.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle driving Daddy's Car</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle014.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Fourteen</div>
+                            <a href="img/gallery/danielle014.jpg" data-lightbox="gallery" data-title="Danielle revving up the highway!"><img src="img/gallery/danielle014.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle revving up the highway!</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle015.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Fifteen</div>
+                            <a href="img/gallery/danielle015.jpg" data-lightbox="gallery" data-title="Danielle in Daddy's Shoes"><img src="img/gallery/danielle015.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle in Daddy's Shoes</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle016.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Sixteen</div>
+                            <a href="img/gallery/danielle016.jpg" data-lightbox="gallery" data-title="Danielle bewitching at Halloween"><img src="img/gallery/danielle016.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle at Halloween</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle017.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Seventeen</div>
+                            <a href="img/gallery/danielle017.jpg" data-lightbox="gallery" data-title="Danielle ~ Xmas 2015"><img src="img/gallery/danielle017.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle ~ Xmas 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle018.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Eighteen</div>
+                            <a href="img/gallery/danielle018.jpg" data-lightbox="gallery" data-title="Danielle on her new bike ~ Xmas 2014"><img src="img/gallery/danielle018.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle on her new bike ~ Xmas 2014</div>
                         </div>
                     </div> <!-- End of Row Three -->
 
                     <div class="row"> <!-- Row Four -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle019.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Nineteen</div>
+                            <a href="img/gallery/danielle019.jpg" data-lightbox="gallery" data-title="Danielle in Noddy's Car ~ Serpentine Green, Hampton"><img src="img/gallery/danielle019.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle in Noddy's Car</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle020.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Twenty</div>
+                            <a href="img/gallery/danielle020.jpg" data-lightbox="gallery" data-title="Danielle Monkeying About at Hamerton Zoo"><img src="img/gallery/danielle020.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle Monkeying About at Hamerton Zoo</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle021.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Twentyone</div>
+                            <a href="img/gallery/danielle021.jpg" data-lightbox="gallery" data-title="Danielle with Uncle Andy"><img src="img/gallery/danielle021.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle with Uncle Andy</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle022.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Twentytwo</div>
+                            <a href="img/gallery/danielle022.jpg" data-lightbox="gallery" data-title="Danielle with Cousin Lily"><img src="img/gallery/danielle022.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle with Cousin Lily</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle023.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/danielle023.jpg" data-lightbox="gallery" data-title="Danielle Image Twentythree"><img src="img/gallery/danielle023.jpg" class="img-thumbnail"></a>
                             <div class="title">Danielle Image Twentythree</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle024.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/danielle024.jpg" data-lightbox="gallery" data-title="Danielle Image Twentyfour"><img src="img/gallery/danielle024.jpg" class="img-thumbnail"></a>
                             <div class="title">Danielle Image Twentyfour</div>
                         </div>
                     </div> <!-- End of Row Four -->
@@ -574,283 +511,282 @@
                     <!-- Start of Snowy's Group -->
                     <div class="row"> <!-- Row One -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy001.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy001.jpg" data-lightbox="gallery" data-title="Snowy Image One"><img src="img/gallery/snowy001.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image One</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy002.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy002.jpg" data-lightbox="gallery" data-title="Snowy Image Two"><img src="img/gallery/snowy002.jpg" class="img-thumbnail"></a>
                             <div class="title">SSnowy Image Two</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy003.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy003.jpg" data-lightbox="gallery" data-title="Snowy Image Three"><img src="img/gallery/snowy003.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Three</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy004.jpg" class="img-thumbnail"></a>
-                            <div class="title">Snowy Image Four</div>
+                            <a href="img/gallery/snowy004.jpg" data-lightbox="gallery" data-title="Danielle playing with Snowy"><img src="img/gallery/snowy004.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle playing with Snowy</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy005.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy005.jpg" data-lightbox="gallery" data-title="Snowy Image Five"><img src="img/gallery/snowy005.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Five</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy006.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy006.jpg" data-lightbox="gallery" data-title="Snowy Image Six"><img src="img/gallery/snowy006.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Six</div>
                         </div>
                     </div> <!-- End of Row One -->
 
                     <div class="row"> <!-- Row Two -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy007.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy007.jpg" data-lightbox="gallery" data-title="Snowy Image Seven"><img src="img/gallery/snowy007.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Seven</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy008.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy008.jpg" data-lightbox="gallery" data-title="Snowy Image Eight"><img src="img/gallery/snowy008.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Eight</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy009.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy009.jpg" data-lightbox="gallery" data-title="Snowy Image Nine"><img src="img/gallery/snowy009.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Nine</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy010.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy010.jpg" data-lightbox="gallery" data-title="Snowy Image Ten"><img src="img/gallery/snowy010.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Ten</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/threegens001.JPG" class="img-thumbnail"></a>
-                            <div class="title">Three Generations Image Eleven</div>
+                            <a href="img/gallery/threegens001.jpg" data-lightbox="gallery" data-title="Three Generations - Sharon, Dawn Coyne, and Danielle"><img src="img/gallery/threegens001.JPG" class="img-thumbnail"></a>
+                            <div class="title">Three Generations - Sharon, Dawn Coyne, and Danielle</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/mr_maker001.JPG" class="img-thumbnail"></a>
-                            <div class="title">Meeting Mr Maker Image Twelve</div>
+                            <a href="img/gallery/mr_maker001.jpg" data-lightbox="gallery" data-title="Meeting Mr Maker At Butlins, Bognor Regis"><img src="img/gallery/mr_maker001.JPG" class="img-thumbnail"></a>
+                            <div class="title">Meeting Mr Maker At Butlins, Bognor Regis</div>
                         </div>
                     </div> <!-- End of Row Two -->
                     <!-- End of Snowy's Group -->
                 </div>
                   
                 <div role="tabpanel" class="tab-pane" id="simon">
-                  <!-- Start of Simon's Group -->
+                   <!-- Start of Simon's Group -->
                     <div class="row"> <!-- Row One -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon001.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/simon001.jpg" data-lightbox="gallery" data-title="Simon Image One"><img src="img/gallery/simon001.jpg" class="img-thumbnail"></a>
                             <div class="title">Simon Image One</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon002.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/simon002.jpg" data-lightbox="gallery" data-title="Simon Image Two"><img src="img/gallery/simon002.jpg" class="img-thumbnail"></a>
                             <div class="title">Simon Image Two</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon003.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/simon003.jpg" data-lightbox="gallery" data-title="Simon Image Three"><img src="img/gallery/simon003.jpg" class="img-thumbnail"></a>
                             <div class="title">Simon Image Three</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon004.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/simon004.jpg" data-lightbox="gallery" data-title="Simon Image Four"><img src="img/gallery/simon004.jpg" class="img-thumbnail"></a>
                             <div class="title">Simon Image Four</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon005.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Five</div>
+                            <a href="img/gallery/simon005.jpg" data-lightbox="gallery" data-title="Simon in Nottingham Forest Golden Anniversary shirt"><img src="img/gallery/simon005.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon in Nottingham Forest Golden Anniversary shirt</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon006.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Six</div>
+                            <a href="img/gallery/simon006.jpg" data-lightbox="gallery" data-title="Simon's fashion statement 2015'"><img src="img/gallery/simon006.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon's fashion statement 2015</div>
                         </div>
                     </div> <!-- End of Row One -->
 
                     <div class="row"> <!-- Row Two -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon007.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/simon007.jpg" data-lightbox="gallery" data-title="Simon Image Seven"><img src="img/gallery/simon007.jpg" class="img-thumbnail"></a>
                             <div class="title">Simon Image Seven</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon008.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Eight</div>
+                            <a href="img/gallery/simon008.jpg" data-lightbox="gallery" data-title="Simon and Danielle, 2015"><img src="img/gallery/simon008.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon and Danielle, 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon009.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Nine</div>
+                            <<a href="img/gallery/simon009.jpg" data-lightbox="gallery" data-title="Simon - Xmas Jumper 2014"><img src="img/gallery/simon009.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon - Xmas Jumper 2014</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon010.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Ten</div>
+                            <a href="img/gallery/simon010.jpg" data-lightbox="gallery" data-title="Simon with an Eagle Owl, 2015"><img src="img/gallery/simon010.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon with an Eagle Owl, 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon011.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Eleven</div>
+                            <a href="img/gallery/simon011.jpg" data-lightbox="gallery" data-title="Simon ~ Proud Dad with one day old Danielle"><img src="img/gallery/simon011.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon ~ Proud Dad</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/simon012.jpg" class="img-thumbnail"></a>
-                            <div class="title">Simon Image Twelve</div>
+                            <a href="img/gallery/simon012.jpg" data-lightbox="gallery" data-title="Simon sporting a goatie"><img src="img/gallery/simon012.jpg" class="img-thumbnail"></a>
+                            <div class="title">Simon sporting a goatie</div>
                         </div>
                     </div> <!-- End of Row Two -->
-                    <!-- End of Simon's Group -->
+                    <!-- End of Simon's Group -->                
                 </div>
                   
                 <div role="tabpanel" class="tab-pane" id="sharon">
                    <!-- Start of Sharon's Group -->
                     <div class="row"> <!-- Row One -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon001.JPG" class="img-thumbnail"></a>
+                            <a href="img/gallery/sharon001.jpg" data-lightbox="gallery" data-title="Sharon Image One"><img src="img/gallery/sharon001.JPG" class="img-thumbnail"></a>
                             <div class="title">Sharon Image One</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon002.jpg" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Two</div>
+                            <a href="img/gallery/sharon002.jpg" data-lightbox="gallery" data-title="Cheers Sharon"><img src="img/gallery/sharon002.jpg" class="img-thumbnail"></a>
+                            <div class="title">Cheers Sharon</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon003.JPG" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Three</div>
+                            <a href="img/gallery/sharon003.jpg" data-lightbox="gallery" data-title="Sharon and Danielle at 'The Farmers', Yaxley"><img src="img/gallery/sharon003.JPG" class="img-thumbnail"></a>
+                            <div class="title">Sharon and Danielle at 'The Farmers', Yaxley</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon004.JPG" class="img-thumbnail"></a>
+                            <a href="img/gallery/sharon004.jpg" data-lightbox="gallery" data-title="Sharon Image Four"><img src="img/gallery/sharon004.JPG" class="img-thumbnail"></a>
                             <div class="title">Sharon Image Four</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon005.jpg" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Five</div>
+                            <a href="img/gallery/sharon005.jpg" data-lightbox="gallery" data-title="Sharon, Danielle and the CocaCola Lorry December 2015"><img src="img/gallery/sharon005.jpg" class="img-thumbnail"></a>
+                            <div class="title">Sharon December 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon006.JPG" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Six</div>
-                        </div>
-                    </div> <!-- End of Row One -->
+                            <a href="img/gallery/sharon006.jpg" data-lightbox="gallery" data-title="Sharon's birthday 2014"><img src="img/gallery/sharon006.JPG" class="img-thumbnail"></a>
+                            <div class="title">Sharon's birthday 2014</div>
+                        </div> <!-- End of Row One -->
 
-                    <div class="row"> <!-- Row Two -->
-                        <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon007.JPG" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Seven</div>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon008.jpg" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Eight</div>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon009.jpg" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Nine</div>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon010.jpg" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Ten</div>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon011.jpg" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Eleven</div>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/sharon012.jpg" class="img-thumbnail"></a>
-                            <div class="title">Sharon Image Twelve</div>
-                        </div>
-                    </div> <!-- End of Row Two -->
-                    <!-- End of Sharon's Group -->
+                        <div class="row"> <!-- Row Two -->
+                            <div class="col-md-2">
+                                <a href="img/gallery/sharon007.jpg" data-lightbox="gallery" data-title="Sharon's birthday 2014'"><img src="img/gallery/sharon007.JPG" class="img-thumbnail"></a>
+                                <div class="title">Sharon's birthday 2014</div>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="img/gallery/sharon008.jpg" data-lightbox="gallery" data-title="Sharon with Danielle at Skegness 2015"><img src="img/gallery/sharon008.jpg" class="img-thumbnail"></a>
+                                <div class="title">Sharon at Skegness 2015</div>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="img/gallery/sharon009.jpg" data-lightbox="gallery" data-title="Sharon Image Nine"><img src="img/gallery/sharon009.jpg" class="img-thumbnail"></a>
+                                <div class="title">Sharon Image Nine</div>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="img/gallery/sharon010.jpg" data-lightbox="gallery" data-title="Sharon Image Ten"><img src="img/gallery/sharon010.jpg" class="img-thumbnail"></a>
+                                <div class="title">Sharon Image Ten</div>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="img/gallery/sharon011.jpg" data-lightbox="gallery" data-title="Sharon wrapping up warm"><img src="img/gallery/sharon011.jpg" class="img-thumbnail"></a>
+                                <div class="title">Sharon wrapping up warm</div>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="img/gallery/sharon012.jpg" data-lightbox="gallery" data-title="Sharon with Danielle at 3-hours old"><img src="img/gallery/sharon012.jpg" class="img-thumbnail"></a>
+                                <div class="title">Sharon with Danielle</div>
+                            </div>
+                        </div> <!-- End of Row Two -->
+                    </div>
+                        <!-- End of Sharon's Group -->
                 </div>
                   
                 <div role="tabpanel" class="tab-pane" id="danielle">
-                  <!-- Start of Danielle's Group -->
+                    <!-- Start of Danielle's Group -->
                     <div class="row"> <!-- Row One -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle001.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image One</div>
+                            <a href="img/gallery/danielle001.jpg" data-lightbox="gallery" data-title="Danielle in her cot"><img src="img/gallery/danielle001.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle in her cot</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle002.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Two</div>
+                            <a href="img/gallery/danielle002.jpg" data-lightbox="gallery" data-title="Danielle ~ One year old"><img src="img/gallery/danielle002.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle ~ One year old</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle003.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Three</div>
+                            <a href="img/gallery/danielle003.jpg" data-lightbox="gallery" data-title="Danielle Pre-school photo 2014"><img src="img/gallery/danielle003.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle Pre-school 2014</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle004.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Four</div>
+                            <a href="img/gallery/danielle004.jpg" data-lightbox="gallery" data-title="Danielle Pre-school photo 2014"><img src="img/gallery/danielle004.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle Pre-school 2014</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle005.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Five</div>
+                            <a href="img/gallery/danielle005.jpg" data-lightbox="gallery" data-title="Danielle aged 1-day with Nana Marriott"><img src="img/gallery/danielle005.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle with Nana Marriott</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle006.JPG" class="img-thumbnail"></a>
+                            <a href="img/gallery/danielle006.jpg" data-lightbox="gallery" data-title="Danielle Image Six"><img src="img/gallery/danielle006.JPG" class="img-thumbnail"></a>
                             <div class="title">Danielle Image Six</div>
                         </div>
                     </div> <!-- End of Row One -->
 
                     <div class="row"> <!-- Row Two -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle007.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Seven</div>
+                            <a href="img/gallery/danielle007.jpg" data-lightbox="gallery" data-title="Danielle Pre-school photo 2015"><img src="img/gallery/danielle007.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle Pre-school 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle008.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Eight</div>
+                            <a href="img/gallery/danielle008.jpg" data-lightbox="gallery" data-title="Danielle in her playpen"><img src="img/gallery/danielle008.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle in her playpen</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle009.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Nine</div>
+                            <a href="img/gallery/danielle009.jpg" data-lightbox="gallery" data-title="Danielle Xmas Day 2015"><img src="img/gallery/danielle009.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle Xmas Day 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle010.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Ten</div>
+                            <a href="img/gallery/danielle010.jpg" data-lightbox="gallery" data-title="Danielle meal out at 'The Farmers', Yaxley"><img src="img/gallery/danielle010.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle at 'The Farmers', Yaxley</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle011.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Eleven</div>
+                            <a href="img/gallery/danielle011.jpg" data-lightbox="gallery" data-title="Danielle Pre-school photo 2015"><img src="img/gallery/danielle011.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle Pre-school 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle012.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Twelve</div>
+                            <a href="img/gallery/danielle012.jpg" data-lightbox="gallery" data-title="Danielle with Nanny Coyne ~ Xmas 2013"><img src="img/gallery/danielle012.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle with Nanny Coyne</div>
                         </div>
                     </div> <!-- End of Row Two -->
 
-
                     <div class="row"> <!-- Row Three -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle013.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Thirteen</div>
+                            <a href="img/gallery/danielle013.jpg" data-lightbox="gallery" data-title="Danielle driving Daddy's Car"><img src="img/gallery/danielle013.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle driving Daddy's Car</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle014.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Fourteen</div>
+                            <a href="img/gallery/danielle014.jpg" data-lightbox="gallery" data-title="Danielle revving up the highway!"><img src="img/gallery/danielle014.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle revving up the highway!</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle015.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Fifteen</div>
+                            <a href="img/gallery/danielle015.jpg" data-lightbox="gallery" data-title="Danielle in Daddy's Shoes"><img src="img/gallery/danielle015.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle in Daddy's Shoes</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle016.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Sixteen</div>
+                            <a href="img/gallery/danielle016.jpg" data-lightbox="gallery" data-title="Danielle bewitching at Halloween"><img src="img/gallery/danielle016.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle at Halloween</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle017.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Seventeen</div>
+                            <a href="img/gallery/danielle017.jpg" data-lightbox="gallery" data-title="Danielle ~ Xmas 2015"><img src="img/gallery/danielle017.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle ~ Xmas 2015</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle018.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Eighteen</div>
+                            <a href="img/gallery/danielle018.jpg" data-lightbox="gallery" data-title="Danielle on her new bike ~ Xmas 2014"><img src="img/gallery/danielle018.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle on her new bike ~ Xmas 2014</div>
                         </div>
                     </div> <!-- End of Row Three -->
 
                     <div class="row"> <!-- Row Four -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle019.JPG" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Nineteen</div>
+                            <a href="img/gallery/danielle019.jpg" data-lightbox="gallery" data-title="Danielle in Noddy's Car ~ Serpentine Green, Hampton"><img src="img/gallery/danielle019.JPG" class="img-thumbnail"></a>
+                            <div class="title">Danielle in Noddy's Car</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle020.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Twenty</div>
+                            <a href="img/gallery/danielle020.jpg" data-lightbox="gallery" data-title="Danielle Monkeying About at Hamerton Zoo"><img src="img/gallery/danielle020.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle Monkeying About at Hamerton Zoo</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle021.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Twentyone</div>
+                            <a href="img/gallery/danielle021.jpg" data-lightbox="gallery" data-title="Danielle with Uncle Andy"><img src="img/gallery/danielle021.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle with Uncle Andy</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle022.jpg" class="img-thumbnail"></a>
-                            <div class="title">Danielle Image Twentytwo</div>
+                            <a href="img/gallery/danielle022.jpg" data-lightbox="gallery" data-title="Danielle with Cousin Lily"><img src="img/gallery/danielle022.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle with Cousin Lily</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle023.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/danielle023.jpg" data-lightbox="gallery" data-title="Danielle Image Twentythree"><img src="img/gallery/danielle023.jpg" class="img-thumbnail"></a>
                             <div class="title">Danielle Image Twentythree</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/danielle024.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/danielle024.jpg" data-lightbox="gallery" data-title="Danielle Image Twentyfour"><img src="img/gallery/danielle024.jpg" class="img-thumbnail"></a>
                             <div class="title">Danielle Image Twentyfour</div>
                         </div>
                     </div> <!-- End of Row Four -->
@@ -858,68 +794,69 @@
                 </div>
                   
                 <div role="tabpanel" class="tab-pane" id="snowy">
-                  <!-- Start of Snowy's Group -->
+                    <!-- Start of Snowy's Group -->
                     <div class="row"> <!-- Row One -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy001.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy001.jpg" data-lightbox="gallery" data-title="Snowy Image One"><img src="img/gallery/snowy001.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image One</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy002.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy002.jpg" data-lightbox="gallery" data-title="Snowy Image Two"><img src="img/gallery/snowy002.jpg" class="img-thumbnail"></a>
                             <div class="title">SSnowy Image Two</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy003.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy003.jpg" data-lightbox="gallery" data-title="Snowy Image Three"><img src="img/gallery/snowy003.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Three</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy004.jpg" class="img-thumbnail"></a>
-                            <div class="title">Snowy Image Four</div>
+                            <a href="img/gallery/snowy004.jpg" data-lightbox="gallery" data-title="Danielle playing with Snowy"><img src="img/gallery/snowy004.jpg" class="img-thumbnail"></a>
+                            <div class="title">Danielle playing with Snowy</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy005.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy005.jpg" data-lightbox="gallery" data-title="Snowy Image Five"><img src="img/gallery/snowy005.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Five</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy006.jpg" class="img-thumbnail"></a>
+                            <<a href="img/gallery/snowy006.jpg" data-lightbox="gallery" data-title="Snowy Image Six"><img src="img/gallery/snowy006.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Six</div>
                         </div>
                     </div> <!-- End of Row One -->
 
                     <div class="row"> <!-- Row Two -->
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy007.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy007.jpg" data-lightbox="gallery" data-title="Snowy Image Seven"><img src="img/gallery/snowy007.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Seven</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy008.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy008.jpg" data-lightbox="gallery" data-title="Snowy Image Eight"><img src="img/gallery/snowy008.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Eight</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy009.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy009.jpg" data-lightbox="gallery" data-title="Snowy Image Nine"><img src="img/gallery/snowy009.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Nine</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/snowy010.jpg" class="img-thumbnail"></a>
+                            <a href="img/gallery/snowy010.jpg" data-lightbox="gallery" data-title="Snowy Image Ten"><img src="img/gallery/snowy010.jpg" class="img-thumbnail"></a>
                             <div class="title">Snowy Image Ten</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/threegens001.JPG" class="img-thumbnail"></a>
-                            <div class="title">Three Generations Image Eleven</div>
+                            <a href="img/gallery/threegens001.jpg" data-lightbox="gallery" data-title="Three Generations - Sharon, Dawn Coyne, and Danielle"><img src="img/gallery/threegens001.JPG" class="img-thumbnail"></a>
+                            <div class="title">Three Generations - Sharon, Dawn Coyne, and Danielle</div>
                         </div>
                         <div class="col-md-2">
-                            <a href="#" ><img src="img/gallery/mr_maker001.JPG" class="img-thumbnail"></a>
-                            <div class="title">Meeting Mr Maker Image Twelve</div>
+                            <a href="img/gallery/mr_maker001.jpg" data-lightbox="gallery" data-title="Meeting Mr Maker At Butlins, Bognor Regis"><img src="img/gallery/mr_maker001.JPG" class="img-thumbnail"></a>
+                            <div class="title">Meeting Mr Maker At Butlins, Bognor Regis</div>
                         </div>
                     </div> <!-- End of Row Two -->
                     <!-- End of Snowy's Group -->
                 </div>
               </div>    
-        </div>
-    </section>
+        </section>
       
     <footer>
+      <div class="container">
         <p><span class="footer-logo">SJMWebDesigns</span> Copyright &copy; 2016 - All rights Reserved.</p>
+      </div>
     </footer>
 
 
@@ -927,7 +864,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=72f75d14-6737-d4e8-14fc-48bd20ba0faf&c=embed-map-html&u=1473696541" defer="defer" async="async"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/wow.js"></script>
