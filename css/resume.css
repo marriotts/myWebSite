@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    width: 90% !important;
+    width: 100% !important;
     height: auto !important;
     min-height: 100% !important;
     border-radius: 0 !important;
@@ -2762,7 +2762,7 @@ table th[class*="col-"] {
   background-color: #d0e9c6;
 }
 
-.table > thead > tr > td.info,
+/*.table > thead > tr > td.info,
 .table > tbody > tr > td.info,
 .table > tfoot > tr > td.info,
 .table > thead > tr > th.info,
@@ -2775,7 +2775,7 @@ table th[class*="col-"] {
 .table > tbody > tr.info > th,
 .table > tfoot > tr.info > th {
   background-color: #d9edf7;
-}
+}*/
 
 .table-hover > tbody > tr > td.info:hover,
 .table-hover > tbody > tr > th.info:hover,

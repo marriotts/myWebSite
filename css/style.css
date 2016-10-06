@@ -30,7 +30,10 @@ section{
 }
 
 .section-title{
-	padding: 10px;
+    display:block;
+    width:100%;
+    align-content:center;
+    padding: 10px;
     padding-bottom: 20px;
 	background: #0383c0;
 	color: #fff;
@@ -164,6 +167,56 @@ h4{
 	list-style: none;
 	font-size: 18px;
 	line-height: 2em;
+}
+
+.empty{
+    width:auto !important;
+    height:0 !important;
+    margin-top: 2px !important;
+}
+
+.footerborder{
+    width:auto !important;
+    height:5px !important;
+    background:#0383c0 !important;
+    margin-top: -21px !important;
+}
+
+footer{
+    display: block;
+	height: 60px !important;
+	background: #f4f4f4 !important;
+	padding-top: 20px !important;
+    color: #0383c0 !important;
+}
+
+.footer-logo{
+    text-transform: none !important;
+    font-family: fantasy, 'Oswald', sans-serif !important;
+    font-size: 21px !important;
+    font-weight: bold;
+}
+
+.resume-close {
+    min-height: 16.42857143px;
+    padding: 15px;
+    margin-right: 40px;
+}
+
+.resume-close .cv-close {
+    margin-top: -2px !important;;
+    color: #000 !important;
+}
+
+#footerinformation{
+    text-align:center;
+    padding-top:15px;
+    font-size: 14px !important;
+}
+
+#compliance {
+  height:45px;
+  padding-top:15px;
 }
 
 .btn-resume.btn-round {
@@ -347,13 +400,6 @@ table.demographic{
     color: #000;
 }
 
-.capt-demog{
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    font-size: 18px !important;
-    display: table-caption !important;
-    text-align: -webkit-center !important;
-}
-
 .lb-logo h1 {
     float: left;
     display: block !important;;
@@ -422,20 +468,6 @@ table.demographic{
     margin-top: -15px;
 }
 
-footer{
-	text-align: center;
-	height: 60px !important;
-	background: #f4f4f4 !important;
-	padding-top: 20px !important;
-    color: #0383c0 !important;
-}
-
-.footer-logo{
-    text-transform: none !important;
-    font-family: fantasy, 'Oswald', sans-serif !important;
-    font-size: 1.5em;
-    font-weight: bold;
-}
 
 @media(max-width:990px){
 	.navbar-header{
