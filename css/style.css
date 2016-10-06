@@ -60,33 +60,6 @@ a::-moz-focus-inner {
     outline: none !important;
 }
 
-.modal-dialog {
-    width: 100% !important;
-    height: 100% !important;
-    margin: 0 !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    padding: 0px !important;
-    margin-top: -20px !important;
-}
-
-. modal-body {
-    height: auto !important;
-    min-height: 100% !important;
-    border-radius: 0 !important;
-    margin-left: auto !important;
-    margin-right: auto!important;
-}
-
-.modal-content {
-    height: auto !important;
-    min-height: 100% !important;
-    border-radius: 0 !important;
-    margin-top: 19px !important;
-    margin-left: auto !important;
-    margin-right: auto!important;
-}
-
 .nav{
 	margin-top: 18px;
 }
@@ -201,11 +174,6 @@ footer{
     min-height: 16.42857143px;
     padding: 15px;
     margin-right: 40px;
-}
-
-.resume-close .cv-close {
-    margin-top: -2px !important;;
-    color: #000 !important;
 }
 
 #footerinformation{
@@ -374,30 +342,6 @@ img.wrap-txt {
     float: left;
     margin-right: 15px;
     margin-bottom: 0px;
-}
-
-table.demographic{
-    margin: 1em 0;
-    margin-top: 1em;
-    margin-right: 0px;
-    margin-bottom: 1em;
-    margin-left: 0px;
-    background-color: #f9f9f9;
-    border: 1px solid #aaa;
-    border-top-color: rgb(170, 170, 170);
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-right-color: rgb(170, 170, 170);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-bottom-color: rgb(170, 170, 170);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left-color: rgb(170, 170, 170);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-collapse: collapse;
-    color: #000;
 }
 
 .lb-logo h1 {
