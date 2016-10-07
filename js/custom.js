@@ -16,3 +16,5 @@ $(document).ready(function () {
     $("#" + idToToggle).collapse('show');
 });
 
+/* Accordion Icon */
+

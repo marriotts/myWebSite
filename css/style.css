@@ -337,7 +337,6 @@ btn-resume:focus {
   margin-top: 8px;
 }
 
-
 img.wrap-txt {
     float: left;
     margin-right: 15px;
@@ -396,8 +395,14 @@ img.wrap-txt {
 }
 
 .panel-body{
-    color: #0383c0
+    color: #0383c0;
 }
+
+/* Accordion Icon */
+
+
+
+/* End Accordion Icon */
 
 .section-dk-gray {
     background-color: #ccc !important;
