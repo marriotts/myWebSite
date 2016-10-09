@@ -36,7 +36,14 @@ section{
     padding: 10px;
     padding-bottom: 20px;
 	background: #0383c0;
-	color: #fff;
+	color: #fff !important;
+}
+
+.section-title h2{
+    text-transform: uppercase !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 30px !important;
+    color: #fff !important;
 }
 
 .section-title small{
@@ -165,7 +172,7 @@ footer{
 
 .footer-logo{
     text-transform: none !important;
-    font-family: fantasy, 'Oswald', sans-serif !important;
+    font-family: fantasy, sans-serif !important;
     font-size: 21px !important;
     font-weight: bold;
 }
@@ -399,10 +406,52 @@ img.wrap-txt {
 }
 
 /* Accordion Icon */
+.accordion-icon{
+    float:right;
+    display:block;
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    margin-right: 5px;
+    background: #2F4F4F;
+    color:#fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;  
+}
 
+.accordion-icon i{
+    display:block;
+    margin-top: 7px;
+    margin-left: 9px;
+}
 
+.panel-heading.active {
+    background-color:#00FFFF !important;
+    text-decoration:none !important;
+}
 
-/* End Accordion Icon */
+.panel-heading a:link{
+    text-decoration:none !important;
+    outline: none !important;
+}
+
+.panel-heading a:visited{
+    text-decoration:none !important;
+    outline: none !important;
+}
+
+.panel-heading a:hover{
+    text-decoration:none !important;
+    outline: none !important;
+    color:#FF0000 !important;
+}
+
+.panel-heading a:active{
+    text-decoration:none !important;
+    outline: none !important;
+}
+/* /Accordion Icon */
+
 
 .section-dk-gray {
     background-color: #ccc !important;
