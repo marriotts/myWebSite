@@ -16,15 +16,21 @@ $(document).ready(function () {
     $("#" + idToToggle).collapse('show');
 });
 
-
-/* Accordion Icon */
-jQuery(function ($) {
+/* Toggle Panel Color */
+$(function () {
     'use strict';
-    var $active = $('#accordion .panel-collapse.in').prev().addClass('active');
-    $active.find('a').append('<span class="accordion-icon"><i class="glyphicon glyphicon-minus"></i></span>');
-    $('#accordion .panel-heading').not($active).find('a').append('<span class="accordion-icon"><i class="glyphicon glyphicon-plus"></i></span>');
-    $('#accordion').on('show.bs.collapse', function (e) {
-        $('#accordion .panel-heading.active').removeClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
-        $(e.target).prev().addClass('active').find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+    $('.panel-color').click(function () {
+        $(this).toggleClass('on');
     });
 });
+/* /Toggle Panel Color */
+
+/* Accordion Icon */
+$(function ($) {
+    'use strict';
+    var selectids = $('#collapseOne, #collapseTwo, #collapseThree, #collapseFour');
+    selectids.on('show.bs.collapse hidden.bs.collapse', function () {
+        $(this).prev().find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+    });
+});
+/* /Accordion Icon */
