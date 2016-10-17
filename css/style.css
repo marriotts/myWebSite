@@ -6,6 +6,10 @@ section{
 	padding: 30px 0;
 }
 
+#places-been{
+    margin-top: 120px; 
+}
+
 .scroll-top-wrapper {
     position: fixed;
     opacity: 0;
@@ -59,9 +63,15 @@ section{
 	padding: 60px 0;
 }
 
-.section-technology{
+.section-technology {
 	background: #f8f8f8;
 	color: #777;
+	padding: 60px 0;
+}
+
+.section-places{
+	background: #fff;
+	color: #000;
 	padding: 60px 0;
 }
 
