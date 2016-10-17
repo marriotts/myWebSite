@@ -1,9 +1,46 @@
 body {
-  padding-top: 90px;
+    padding-top: 90px;
 }
 
 section{
 	padding: 30px 0;
+}
+
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+	overflow: hidden;
+	text-align: center;
+	z-index: 99999999;
+    background-color: #777777;
+	color: #eeeeee;
+	width: 50px;
+	height: 48px;
+	line-height: 48px;
+	right: 13px;
+	bottom: 70px;
+	padding-top: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.scroll-top-wrapper:hover {
+	background-color: #888888;
+}
+.scroll-top-wrapper.show {
+    visibility: visible;
+    cursor: pointer;
+	opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+	line-height: inherit;
 }
 
 .section-gray{
@@ -15,7 +52,6 @@ section{
 	color: #fff;
 	padding: 60px 0;
 }
-
 
 .section-secondary{
 	background: #e44d26;
@@ -118,6 +154,17 @@ a::-moz-focus-inner {
 	font-family: arial;
 	text-transform: none;
     text-align: center
+}
+
+.caret {
+  float: right !important;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
 }
 
 .navbar-nav a:hover,.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
@@ -504,6 +551,13 @@ a:hover, a:hover .accordion-icon{
 }
 /* /Accordion Icon */
 
+#map, #pano {
+    float:left;
+    margin-top: 20px;
+    height: 450px;
+    width: 50%;
+    background-color: white;
+}
 
 .section-dk-gray {
     background-color: #ccc !important;

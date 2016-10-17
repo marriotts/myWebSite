@@ -74,7 +74,8 @@
       <div class="row">
         <div class="col-md-8">
             <!-- Our House by longitude and latitude 52.519694, -0.259364 -->
-            <iframe style="height:520px;width:100%;border:0;"  src="https://www.google.com/maps/embed/v1/place?q=52.519694, -0.259364&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+            <div id="map"></div>
+            <div id="pano"></div>
         </div>
         <div class="col-md-4">
           <h3>Contact Details</h3>
@@ -137,9 +138,165 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=72f75d14-6737-d4e8-14fc-48bd20ba0faf&c=embed-map-html&u=1473696541" defer="defer" async="async"></script>
-    <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=72f75d14-6737-d4e8-14fc-48bd20ba0faf&c=embed-map-html&u=1473696541" defer="defer" async="async"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    function initMap() {
+        
+        // Create a new StyledMapType object, passing it an array of styles,
+        // and the name to be displayed on the map type control.
+        var styledMapType = new google.maps.StyledMapType(
+            [
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "hue": "#F1FF00"
+                        },
+                        {
+                            "saturation": -27.4
+                        },
+                        {
+                            "lightness": 9.4
+                        },
+                        {
+                            "gamma": 1
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "hue": "#0099FF"
+                        },
+                        {
+                            "saturation": -20
+                        },
+                        {
+                            "lightness": 36.4
+                        },
+                        {
+                            "gamma": 1
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "hue": "#00FF4F"
+                        },
+                        {
+                            "saturation": 0
+                        },
+                        {
+                            "lightness": 0
+                        },
+                        {
+                            "gamma": 1
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "hue": "#FFB300"
+                        },
+                        {
+                            "saturation": -38
+                        },
+                        {
+                            "lightness": 11.2
+                        },
+                        {
+                            "gamma": 1
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "hue": "#00B6FF"
+                        },
+                        {
+                            "saturation": 4.2
+                        },
+                        {
+                            "lightness": -63.4
+                        },
+                        {
+                            "gamma": 1
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "hue": "#9FFF00"
+                        },
+                        {
+                            "saturation": 0
+                        },
+                        {
+                            "lightness": 0
+                        },
+                        {
+                            "gamma": 1
+                        }
+                    ]
+                }
+            ],
+            {name: 'Styled'});
+
+        // Create a map object and specify the DOM element for display.
+        //lat = 52.519690, long = -0.2594164
+        'use strict';
+        // Create a map object, and include the MapTypeId to add
+        // to the map type control.
+        var home = {lat: 52.519690, lng: -0.259416},
+            homeSv = {lat: 52.520027, lng: -0.259262};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: home,
+            mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                        'styled_map']
+            }
+
+        });
+        //Associate the styled map with the MapTypeId and set it to display.
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+
+        var panorama = new google.maps.StreetViewPanorama(
+            document.getElementById('pano'), {
+                position: homeSv,
+                pov: {
+                    heading: 184.3,
+                    pitch: 0,
+                    zoom:14
+                },
+                motionTrackingControlOptions: {
+                    position: google.maps.ControlPosition.LEFT_BOTTOM
+                }
+        });
+        map.setStreetView(panorama);
+        
+        var marker = new google.maps.Marker({
+          position: home,
+          map: map
+        });
+    };
+</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl_SdRTSu8-C0OZdhZrgCXnbympeOTJf0 &callback=initMap" async defer></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/custom.js"></script>

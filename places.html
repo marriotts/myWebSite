@@ -11,6 +11,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <!-- Favicon references -->
@@ -49,7 +50,17 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">Home<span><i class="fa fa-home fa-2x"></i></span></a></li>  <li><a href="about.html">About<span><i class="fa fa-info fa-2x"></i></span></a></li>
             <li ><a href="gallery.html">Photos<span><i class="fa fa-picture-o fa-2x"></i></span></a></li>
-            <li class="active"><a href="places.html">Places<span><i class="fa fa-globe fa-2x"></i></span></a></li>
+            <li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" role="button" href="places.html">Places<span><i class="fa fa-globe fa-2x"></i><span class="caret"></span></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#yaxley">Yaxley</a></li>
+                    <li><a href="#nottingham">Nottingham</a></li>
+                    <li><a href="#derby">Derby</a></li>
+                    <li><a href="#hawaii">Hawaii</a></li>
+                    <li><a href="#paris">Paris</a></li>
+                    <li><a href="#venice">Venice</a></li>
+                    <li><a href="#rome">Rome</a></li>
+                </ul>
+            </li>     
             <li><a href="contact.html">Contact <span><i class="fa fa-phone-square fa-2x"></i></span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -65,8 +76,8 @@
             </div>
         </div>
     </section>
-      
-    <section>
+
+    <section id="places-been">
         <div class="container">
             <div class="row">
                 <div id="yaxley" class="places-been">
@@ -323,24 +334,24 @@
         </div>
     </footer>
 
+      <!-- The scroll to top feature -->
+    
+    <div class="scroll-top-wrapper ">
+      <span class="scroll-top-inner">
+        <i class="fa fa-2x fa-arrow-circle-up"></i>
+      </span>
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=72f75d14-6737-d4e8-14fc-48bd20ba0faf&c=embed-map-html&u=1473696541" defer="defer" async="async"></script>
-    <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=56324635-0748-64e5-3d56-9cd5ebffa22d&c=google-map-html&u=1474540361" defer="defer" async="async"></script>
-    <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=86bca994-61c5-a97b-551c-e12ce81a6a7e&c=google-map-html&u=1474540361" defer="defer" async="async"></script>
-    <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=62897540-4170-0ede-988c-1455c5eaa8b0&c=google-map-html&u=1474540361" defer="defer" async="async"></script>
-    <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=211ae0d6-38ba-2c2d-1b66-be57be6dcb2e&c=google-map-html&u=1474540361" defer="defer" async="async"></script>
-    <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=12e11425-88ba-8da5-0022-8f4cbef6ec5c&c=google-map-html&u=1474540361" defer="defer" async="async"></script>
-    <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=f3308db9-91a6-c5ff-4227-ff25c2463641&c=google-map-html&u=1474540361" defer="defer" async="async"></script>
-    <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=9a131f03-bdaf-fbfa-25fe-976298dbd7f8&c=google-map-html&u=1474540361" defer="defer" async="async"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/wow.js"></script>
-    <script>new WOW().init();
+    <script>
+        new WOW().init();
     </script>
   </body>
 </html>
