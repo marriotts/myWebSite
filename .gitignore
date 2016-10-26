@@ -9,6 +9,8 @@
 *.vi
 *.zip
 *.mov
+*.MOV
+*.jar
 *~
 
 # OS or Editor folders
