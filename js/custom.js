@@ -12,35 +12,18 @@
 
 $(document).ready(function () {
     'use strict';
-    var idToToggle = window.location.hash.replace("#", "");
-    $("#" + idToToggle).collapse('show');
-});
+    var idToToggle, selectids, verticalOffset, offset, offsetTop, last, element;
 
-/* Toggle Panel Color */
-$(function () {
-    'use strict';
-    $('.panel-color').click(function () {
-        $(this).toggleClass('on');
-    });
-});
-/* /Toggle Panel Color */
-
-/* Accordion Icon */
-$(function ($) {
-    'use strict';
-    var selectids = $('#collapseOne, #collapseTwo, #collapseThree, #collapseFour');
+    /* Link to Accordion from another page and toggle plus/minus icon */
+    selectids = $('#collapseOne, #collapseTwo, #collapseThree, #collapseFour');
+    idToToggle = window.location.hash.replace("#", "");
     selectids.on('show.bs.collapse hidden.bs.collapse', function () {
         $(this).prev().find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
     });
-});
-/* /Accordion Icon */
+    $("#" + idToToggle).collapse('show');
+    /* /Link to Accordion from another page and toggle plus/minus icon */
 
-
-/* Scroll to Top */
-$(document).ready(function () {
-    'use strict';
-    var verticalOffset, offset, offsetTop, element;
- 
+    /* Scroll to Top */
     function scrollToTop() {
         verticalOffset = typeof (verticalOffset) !== 'undefined' ? verticalOffset : 0;
         element = $('body');
@@ -50,7 +33,6 @@ $(document).ready(function () {
     }
 
     $(function () {
-
         $(document).on('scroll', function () {
             if ($(window).scrollTop() > 175) {
                 $('.scroll-top-wrapper').addClass('show');
@@ -61,8 +43,6 @@ $(document).ready(function () {
 
         $('.scroll-top-wrapper').on('click', scrollToTop);
     });
+    /* /Scroll to Top */
 
 });
-
-
-
