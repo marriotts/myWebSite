@@ -14,6 +14,7 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/clock.css" rel="stylesheet">
+    <link href="css/calendar.css" rel="stylesheet">
     <!-- Favicon references -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -70,20 +71,24 @@
       </div>
     </nav>
       
-    <section id="myclock">
+    <section id="dashboard">
         <div class="container">
             <div class="row">
-                <div id="time" class="col-md-4">
-                    <h3>Time</h3>
-                    <canvas id="canvas" width="150" height="150"></canvas>
-                </div>
                 <div id="date" class="col-md-4">
                     <h3>Date</h3>
-                    <canvas id="canvas" width="150" height="150"></canvas>
+                    <div id="calendar">
+                        <p id="calendar-day"></p>
+                        <p id="calendar-date"></p>
+                        <p id="calendar-month-year"></p>
+                    </div>
+                </div>
+                <div id="time" class="col-md-4">
+                    <h3>Time</h3>
+                    <canvas id="canvasTime" width="200" height="200"></canvas>
                 </div>
                 <div id="weather" class="col-md-4">
                     <h3>Weather</h3>
-                    <canvas id="canvas" width="150" height="150"></canvas>
+                    <canvas id="canvasWeather" width="2000" height="200"></canvas>
                 </div>
             </div>
         </div>
@@ -272,7 +277,8 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/clock.js"></script>
+      <script src="js/clock.js"></script>
+    <script src="js/calendar.js"></script>
     <script src="js/wow.js"></script>
     <script>
       new WOW().init();
