@@ -1,0 +1,200 @@
+#weatherWrapper {
+    position: relative !important;
+    padding-top: 20px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 20px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-family: Verdana, Arial, sans-serif !important;
+    width: 300px !important;
+    height: 200px !important;
+    vertical-align: middle;
+    background-color: #0383c0 !important;
+    color: #fff !important;
+    border-radius: 10% !important;
+    box-shadow: 5px 5px 5px 0 rgba(50, 50, 50, 0.4) !important; 
+}
+
+#weatherTitle {
+    position: absolute;
+    margin: 0 auto;
+    font-size: 14px;
+    vertical-align: middle;
+    text-align: center;
+    width: 260px;
+    height: 20px;
+    top: 5px;
+    left: 20px;
+    color: #FFFF00;
+    background-color: #0383c0;
+}
+
+#city-title p {
+    display: inline-block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#weatherCond {
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 10px;
+    margin-right: 0;
+    display: inline-block;
+    font-size: 12px/14px;
+    width: 135px;
+    height: 155px;
+    background-color: #0383c0;
+    color: #fff;
+    border-right: 1px solid #FFFF00;
+}
+
+#weather-text p {
+    display: inline-block;
+    margin: 0 auto;
+    overflow: hidden;     
+}
+
+#weather-text {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    color: #FFFF00 !important;
+    font-size: 12px !important;
+    text-align: center !important;
+}
+
+#weatherCond img {
+    padding-top: 10px;
+    margin-top: 1px;
+    width = 100px;
+}
+
+#weatherImg img {
+    width: 100px;
+}
+
+#windSpeed p {
+    display: inline-block;
+    margin: 0 auto;
+    overflow: hidden; 
+}
+
+#windSpeed {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden; 
+    text-align: center !important;
+    padding-top: 15px;
+    margin-right: 2px;
+    margin-left: -4px;
+    font-size: 12px !important;
+    text-align: center !important;
+    color: #FFFF00 !important;
+}
+
+#weatherData {
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 12px/14px;
+    width: 135px;
+    height: 155px;
+    background-color: #0383c0;
+    color: #FFFF00;
+    border-left: 1px solid #FFFF00;
+}
+
+#temperature {
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden; 
+    font-size: 28px !important;
+    text-align: center !important;
+    color: #FFFF00;
+}
+
+#humidity {
+    padding-top: 10px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden; 
+    font-size: 12px !important;
+    text-align: center !important;
+    color: #FFFF00;
+}
+
+#pressure {
+    padding-top: 0;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden; 
+    font-size: 12px !important;
+    text-align: center !important;
+    color: #FFFF00;
+}
+
+#weatherFooter {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden; 
+    font-size: 12px !important;
+    text-align: center !important;
+    margin: 0 auto;
+    width: 260px;
+    height: 20px;
+    bottom: 5px;
+    left: 20px;
+    font-size: 10px;
+    text-align: center !important;
+    padding-top: 3px !important;
+    padding-bottom: 7px !important;
+    background-color: #0383c0;
+    color: #FFFF00 !important;
+}
+
+/* unvisited link */
+#weatherFooter a:link {
+    color: #FFFF00 !important;
+    text-decoration: none !important;
+}
+
+/* visited link */
+#weatherFooter a:visited {
+    color: #FFFF00 !important;
+    text-decoration: none !important;
+}
+
+/* mouse over link */
+#weatherFooter a:hover {
+    color: #FFFF00 !important;
+    text-decoration: underline !important;
+}
+
+/* selected link */
+#weatherFooter a:active {
+    color: #FFFF00 !important;
+    text-decoration: underline !important;
+}
+
+#weather>p {
+    font-family: Verdana, Arial, sans-serif !important !important;
+    padding: 10px 0 !important;
+    margin: 0 !important;
+    color: #fff !important;
+    text-align: center !important;
+}
+
+#weatherFooter p {
+    padding-bottom: 10px !important;
+}
