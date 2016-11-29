@@ -3,10 +3,10 @@
  * by Simon Marriott
  *
  * Copyright 2016, SJMWebDesigns, All rights reserved
- */
+*/
 var options = {
     enableHighAccuracy: true,
-    timeout: 20000,
+    timeout: 10 * 1000 * 1000,
     maximumAge: 0
 },
     wrapper = document.getElementById("weatherWrapper"),
@@ -20,10 +20,17 @@ var options = {
     latitude,
     longitude;
 
-function error() {
+function error(geoError) {
     'use strict';
-    alert("Geocoder failed");
-}
+    var errors = {
+        1: 'Permission denied',
+        2: 'Position is currently unavailable.',
+        3: 'Request timeout',
+        4: 'An unknown error occurred'
+    };
+    alert("GeoLocation Error: " + errors[geoError.code]);
+    zip = window.prompt("Could not discover your location. Please enter your zip/post code?");
+        alert(zip);
 
 function kelvinToFahrenheit(kelvinValue) {
     'use strict';
@@ -114,11 +121,7 @@ function getWeather(lat, lon) {
             
             //Populate The Weather Footer Div
             $("#weatherFooter").html("<a href='https://openweathermap.org/'>Powered by  OpenWeatherMap</a>");
-        },
-        error: function () {
-            alert('Failed!');
         }
- 
     });
 }
 
@@ -133,8 +136,10 @@ function success(position) {
 }
 
 // If provided by the browser, use HTML5 Geolocation to get local latitude and longitude
-if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(success, error, options);
+if (navigator && navigator.geolocation) {
+    //navigator.geolocation.getCurrentPosition(success, error, options);
+    navigator.geolocation.watchPosition(success, error, options);
 } else {
-    wrapper.innerHTML = '<p>Your browser does NOT support HTML5 Geolocation.<br />Please update your browser</p>';
+    alert("Your browser does NOT support HTML5 Geolocation.  Please update your browser");
+    //wrapper.innerHTML = '<p>Your browser does NOT support HTML5 Geolocation.<br />Please update your browser</p>';
 }
