@@ -4,33 +4,18 @@
  *
  * Copyright 2016, SJMWebDesigns, All rights reserved
 */
-var options = {
-    enableHighAccuracy: true,
-    timeout: 10 * 1000 * 1000,
-    maximumAge: 0
-},
-    wrapper = document.getElementById("weatherWrapper"),
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
+
+var wrapper = document.getElementById("weatherWrapper"),
     condition = document.getElementById("WeatherCond"),
     wdata = document.getElementById("weatherData"),
     wtitle = document.getElementById("weatherTitle"),
     wfooter = document.getElementById("weatherFooter"),
     api = "http://api.openweathermap.org/data/2.5/weather?",
     appid = "&APPID=4e8c039c946c3f8c29806a57a2b1d963",
-    geocoder,
     latitude,
     longitude;
-
-function error(geoError) {
-    'use strict';
-    var errors = {
-        1: 'Permission denied',
-        2: 'Position is currently unavailable.',
-        3: 'Request timeout',
-        4: 'An unknown error occurred'
-    };
-    alert("GeoLocation Error: " + errors[geoError.code]);
-    zip = window.prompt("Could not discover your location. Please enter your zip/post code?");
-        alert(zip);
 
 function kelvinToFahrenheit(kelvinValue) {
     'use strict';
@@ -45,8 +30,8 @@ function kelvinToCentigrade(kelvinValue) {
 }
 
 function mpsToMph(mps) {
-    // 1 m/s = 2.236941851939MPH
     'use strict';
+    // 1 m/s = 2.236941851939MPH
     var mph = mps * 2.236941851939;
     return mph.toFixed(2);
 }
@@ -55,7 +40,7 @@ function degToCardinal(direction) {
     'use strict';
     var index,
         sector = ["Northerly",
-                  "NorthNorthEeasterly",
+                  "NorthNorthEasterly",
                   "NorthEasterly",
                   "EastNorthEasterly",
                   "Easterly",
@@ -126,20 +111,12 @@ function getWeather(lat, lon) {
 }
 
 //Get the latitude and the longitude;
-function success(position) {
+jQuery(document).ready(function () {
     'use strict';
-    latitude = position.coords.latitude;
-    longitude = position.coords.longitude;
+    jQuery.get("http://ipinfo.io/", function (response) {
+        latitude = response.loc.split(',')[0];
+        longitude = response.loc.split(',')[1];
 
-    // Now get the current weather for the location
-    getWeather(latitude, longitude);
-}
-
-// If provided by the browser, use HTML5 Geolocation to get local latitude and longitude
-if (navigator && navigator.geolocation) {
-    //navigator.geolocation.getCurrentPosition(success, error, options);
-    navigator.geolocation.watchPosition(success, error, options);
-} else {
-    alert("Your browser does NOT support HTML5 Geolocation.  Please update your browser");
-    //wrapper.innerHTML = '<p>Your browser does NOT support HTML5 Geolocation.<br />Please update your browser</p>';
-}
+        getWeather(latitude, longitude);
+    }, "jsonp");
+});
