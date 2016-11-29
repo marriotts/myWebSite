@@ -25,8 +25,11 @@ jQuery(document).ready(function () {
 	        data: postdata,
 	        dataType: 'json',
 	        success: function (json) {
-                if (json.nameMessage !== '') {
-                    $('.contact-form form .contact-name').addClass('input-error');
+                if (json.firstNameMessage !== '') {
+                    $('.contact-form form .contact-first-name').addClass('input-error');
+                }
+                if (json.lastNameMessage !== '') {
+                    $('.contact-form form .contact-last-name').addClass('input-error');
                 }
 	            if (json.emailMessage !== '') {
 	                $('.contact-form form .contact-email').addClass('input-error');
@@ -37,7 +40,7 @@ jQuery(document).ready(function () {
 	            if (json.messageMessage !== '') {
 	                $('.contact-form form textarea').addClass('input-error');
 	            }
-	            if (json.nameMessage === '' && json.emailMessage === '' && json.subjectMessage === '' && json.messageMessage === '') {
+	            if (json.firstNameMessage === '' && json.lastNameMessage === '' && json.emailMessage === '' && json.subjectMessage === '' && json.messageMessage === '') {
 	                $('.contact-form form').fadeOut('fast', function () {
 	                    $('.contact-form').append('<p>Thanks for contacting us! We will get back to you very soon.</p>');
 	                    // reload background
