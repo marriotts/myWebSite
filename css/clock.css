@@ -13,19 +13,19 @@
 }
 
 #date {
-    margin: 0, auto;
+    margin: 0 auto;
     align-content: center;
 }
 
 #time {
-    margin: 0, auto;
+    margin: 0 auto;
     align-content: center;
     border-left: 2px solid #000;
     border-right: 2px solid #000;
 }
 
 #weather {
-    margin: 0, auto;
+    margin: 0 auto;
     align-content: center;
 }
 

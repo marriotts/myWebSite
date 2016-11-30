@@ -38,7 +38,7 @@ function mpsToMph(mps) {
 
 function degToCardinal(direction) {
     'use strict';
-    var index,
+    var index = Math.trunc((direction / 22.5) + 0.5),
         sector = ["Northerly",
                   "NorthNorthEasterly",
                   "NorthEasterly",
@@ -54,12 +54,10 @@ function degToCardinal(direction) {
                   "Westerly",
                   "WestNorthWesterly",
                   "NorthWesterly",
-                  "NorthNorthWesterly",
-                  "Northerly"
+                  "NorthNorthWesterly"
                  ];
     
-    index = ((direction % 360 / 22.5) + 1);
-    return sector[Math.round(index)];
+    return sector[(index % 16)];
 }
 
 //function getWeather(place) {
