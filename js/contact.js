@@ -46,8 +46,14 @@ jQuery(document).ready(function () {
 	                    // reload background
                         $.backstretch("resize");
 	                });
-	            }
-	        }
-	    });
+	            } else {
+                    $('.contact-form form').fadeOut('fast', function () {
+	                    $('.contact-form').append('<p>Oops! Something went wrong!<br /> Message not sent.</p>');
+	                    // reload background
+                        $.backstretch("resize");
+                    });
+                }
+            }
+        });
     });
 });

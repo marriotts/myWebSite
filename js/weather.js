@@ -75,7 +75,7 @@ function getWeather(lat, lon) {
             
             //Populate the Title Div with Location
             if (data.name) {
-                $("#city-text").html("The Weather For " + data.name + ", " + data.sys.country);
+                $("#city-text").html(data.name + ", " + data.sys.country);
             }
             
             //Convert Wind Speed from m/s to MPH and Degrees to Cardinal
