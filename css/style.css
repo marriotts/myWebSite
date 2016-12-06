@@ -412,7 +412,7 @@ img.git-logo {
     float: right;
     display: inline-block;
     margin-left: 15px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     padding: 5px;
     border: 10px solid white;
     -webkit-box-shadow: 0 0 5px #888;
@@ -431,8 +431,8 @@ img.git-logo {
 .imageLeft {
     float: left;
     display: inline-block;
-    margin-left: 15px;
-    margin-bottom: 0px;
+    margin-right: 15px;
+    margin-bottom: 5px;
     padding: 5px;
     border: 10px solid white;
     -webkit-box-shadow: 0 0 5px #888;
