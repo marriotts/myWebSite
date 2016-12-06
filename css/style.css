@@ -59,17 +59,17 @@ section{
 	line-height: inherit;
 }
 
-.section-gray{
+.section-gray {
 	background: #f4f4f4;
 }
 
-.section-primary{
+.section-primary {
 	background: #0383c0;
 	color: #fff;
 	padding: 60px 0;
 }
 
-.section-secondary{
+.section-secondary {
 	background: #e44d26;
 	color: #fff;
 	padding: 60px 0;
@@ -81,13 +81,13 @@ section{
 	padding: 60px 0;
 }
 
-.section-places{
+.section-places {
 	background: #fff;
 	color: #000;
 	padding: 60px 0;
 }
 
-.section-title{
+.section-title {
     display: block;
     width: 100%;
     align-content: center;
@@ -97,14 +97,14 @@ section{
 	color: #fff !important;
 }
 
-.section-title h2{
+.section-title h2 {
     text-transform: uppercase !important;
     font-family: 'Oswald', sans-serif !important;
     font-size: 30px !important;
     color: #fff !important;
 }
 
-.section-title small{
+.section-title small {
 	color: #ccc !important;
 }
 
@@ -125,18 +125,18 @@ a::-moz-focus-inner {
     outline: none !important;
 }
 
-.nav{
+.nav {
 	margin-top: 18px;
 }
 
-.navbar{
+.navbar {
 	min-height: 90px;
 	margin-bottom: 0 !important;
 }
 
-.navbar-brand{
+.navbar-brand {
 	height: auto;
-	padding-top:15px;
+	padding-top: 15px;
 	margin: 0;
 }
 
@@ -148,26 +148,26 @@ a::-moz-focus-inner {
   height: auto;
 }
 
-.navbar-nav{
+.navbar-nav {
 	margin: 0;
 	padding: 0;
 }
 
-.navbar-nav li{
+.navbar-nav li {
 	padding-top: 5px;
 	padding-bottom: 5px;
 }
 
-.navbar-nav > li > a{
+.navbar-nav > li > a {
 	padding: 20px;
 	font-size: 18px;
 	font-weight: bold;
-	border-right:1px solid #ccc;
+	border-right: 1px solid #ccc;
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 }
 
-.navbar-nav > li > a span{
+.navbar-nav > li > a span {
 	margin: 5px 0 0 0;
 	padding: 0;
 	font-size: 14px;
@@ -189,49 +189,58 @@ a::-moz-focus-inner {
   border-left: 4px solid transparent;
 }
 
-.navbar-nav a:hover,.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+.navbar-nav a:hover,.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	background: #0383c0 !important;
 	color: #fff !important;
 }
 
-h1,h2,h3{
+h1,h2,h3 {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 }
 
-h4{
+h4 {
 	text-transform: none;
 	font-family: 'Oswald', sans-serif;
 }
 
-.capt-meet{
+.capt-meet {
     text-align: center
 }
 
-.fa-color{
+.fa-color {
 	color: #0383c0;
 }
 
-.feature-list li{
+.feature-list li {
 	list-style: none;
 	font-size: 18px;
 	line-height: 2em;
 }
 
-.empty{
-    width:auto !important;
-    height:0 !important;
+.empty {
+    width: auto !important;
+    height: 0 !important;
     margin-top: 2px !important;
 }
 
-.footerborder{
-    width:auto !important;
-    height:5px !important;
-    background:#0383c0 !important;
+.logo-wrapper {
+    display: block;
+    float: left;
+    width: 170px;
+    margin 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.footerborder {
+    width: auto !important;
+    height: 5px !important;
+    background: #0383c0 !important;
     margin-top: -21px !important;
 }
 
-footer{
+footer {
     display: block;
 	height: 60px !important;
 	background: #f4f4f4 !important;
@@ -239,7 +248,7 @@ footer{
     color: #0383c0 !important;
 }
 
-.footer-logo{
+.footer-logo {
     text-transform: none !important;
     font-family: fantasy, sans-serif !important;
     font-size: 21px !important;
@@ -252,15 +261,15 @@ footer{
     margin-right: 40px;
 }
 
-#footerinformation{
-    text-align:center;
-    padding-top:15px;
+#footerinformation {
+    text-align: center;
+    padding-top: 15px;
     font-size: 14px !important;
 }
 
 #compliance {
-  height:45px;
-  padding-top:15px;
+  height: 45px;
+  padding-top: 15px;
 }
 
 .btn-resume.btn-round {
@@ -310,11 +319,11 @@ h3.jenkins-title {
     margin-top: -0.1rem !important;
 }
 
-#tools{
-    display:block !important;
-    float:left !important;
+#tools {
+    display: block !important;
+    float: left !important;
     max-width: 120px !important;
-    width:110px !important;
+    width: 110px !important;
     margin-right: 10px !important;
     margin-left: 20px !important;
     margin-bottom: 20px !important;
@@ -339,7 +348,7 @@ img.git-logo {
     width: 100px !important;  
 }
 
-.img-customer{
+.img-customer {
     border-top: 0px !important;
     border-right: 0px !important;
     border-left: 5px !important;
@@ -352,18 +361,18 @@ img.git-logo {
     margin-left: 10px !important;
 }
 
-.img-rotate{
+.img-rotate {
     -ms-transform: rotate(90deg); /* IE 9 */
     -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     transform: rotate(90deg);
 }
 
-.slider-size{
+.slider-size {
     background-color: #4d4d4d !important;
 }
 
 .slider-size img {
-        max-height:450px !important;
+        max-height: 450px !important;
         width: auto !important;
         height: 95% !important;
         display: block !important;
@@ -371,13 +380,13 @@ img.git-logo {
         margin-right: auto !important;
 }
 
-.img-center{
+.img-center {
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
 }
 
-.img-been{
+.img-been {
     display: block;
     max-width: 259px !important;
     max-height: 194px !important;
@@ -388,7 +397,7 @@ img.git-logo {
     margin-bottom: 10px !important;
 }
 
-.places-been{
+.places-been {
     display: block;
     padding-top: 15px !important;
     padding-bottom: 10px !important;
@@ -420,7 +429,7 @@ img.git-logo {
 }
 
 .imageLeft {
-    float: right;
+    float: left;
     display: inline-block;
     margin-left: 15px;
     margin-bottom: 0px;
@@ -453,6 +462,27 @@ img.wrap-txt {
     font-weight: 400 !important;
 }
 
+#brackets-logo {
+    text-transform: capitalize !important;
+    font-size: 28px !important;
+    font-weight: 400 !important;
+    text-align: inherit !important;
+}
+
+.brackets-icon img {
+    width: 120px !important;
+    height: 120px !important;
+    margin-right: 1px !important;
+}
+
+.brackets-logo h3 {
+    display: inline-block !important;;
+    color: #29AAE2 !important;
+    font-family: "Roboto","Helvetica","lucida grande",sans-serif !important;
+    font-weight: 400 !important;
+    margin-left: 10px !important;
+}
+
  /* unvisited link */
 .lb-logo a:link {
     color: #000 !important;
@@ -481,7 +511,35 @@ img.wrap-txt {
     outline: none !important;
 }
 
-.picture-icon{
+ /* unvisited link */
+.Brackets-logo a:link {
+    color: #29AAE2 !important;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+/* visited link */
+.Brackets-logo a:visited {
+    color: #29AAE2 !important;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+/* mouse over link */
+.Brackets-logo a:hover {
+    color: #29AAE2 !important;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+/* selected link */
+.Brackets-logo a:active {
+    color: #29AAE2 !important;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.picture-icon {
     float: left;
     height: 45px;
     margin-right: 1px;
@@ -500,24 +558,24 @@ img.wrap-txt {
     box-sizing: border-box;
 }
 
-.panel-body{
+.panel-body {
     color: #0383c0;
 }
 
 /* Accordion Icon */
-.accordion-icon{
-    float:right;
-    display:block;
+.accordion-icon {
+    float: right;
+    display: block;
     width: 35px;
     height: 35px;
     margin-top: -9px;
     margin-right: -12px;
-    color:#000;
+    color: #000;
     outline: none !important;
 }
 
-.accordion-icon i{
-    display:block;
+.accordion-icon i {
+    display: block;
     margin-top: 7px;
     margin-right: 7px;
     outline: none !important;
@@ -525,45 +583,45 @@ img.wrap-txt {
 
 .panel-heading.active {
     outline: none !important;
-    background-color:#00C0FF !important;
-    text-decoration:none !important;
+    background-color: #00C0FF !important;
+    text-decoration: none !important;
 }
 
 .panel-color {
-    background-color:#f5f5f5 !important;
-    outline:none !important;
+    background-color: #f5f5f5 !important;
+    outline: none !important;
 }
 
 .panel-color.on {
-    background-color:#00c0ff !important;
-    border:0 !important;
-    border:1px #00c0ff solid !important;
+    background-color: #00c0ff !important;
+    border: 0 !important;
+    border: 1px #00c0ff solid !important;
     outline: none !important;
 }
 
-.panel-heading a:link{
-    text-decoration:none !important;
+.panel-heading a:link {
+    text-decoration: none !important;
     outline: none !important;
 }
 
-.panel-heading a:visited{
-    text-decoration:none !important;
+.panel-heading a:visited {
+    text-decoration: none !important;
     outline: none !important;
 }
 
-a:hover, a:hover .accordion-icon{
-    text-decoration:none !important;
+a:hover, a:hover .accordion-icon {
+    text-decoration: none !important;
     outline: none !important;
 }
 
-.panel-heading a:active{
-    text-decoration:none !important;
+.panel-heading a:active {
+    text-decoration: none !important;
     outline: none !important;
 }
 /* /Accordion Icon */
 
 #map, #pano {
-    float:left;
+    float: left;
     margin-top: 20px;
     height: 450px;
     width: 50%;
@@ -584,49 +642,49 @@ a:hover, a:hover .accordion-icon{
 }
 
 
-@media(max-width:990px){
-	.navbar-header{
+@media(max-width:990px) {
+	.navbar-header {
 		float: none;
 	}
 
-	.navbar-left, .navbar-right{
+	.navbar-left, .navbar-right {
 		float: none !important;
 	}
 
-	.navbar-toggle{
+	.navbar-toggle {
 		display: block;
 	}
 
-	.navbar-collapse{
+	.navbar-collapse {
 		border-top: 1px solid transparent;
 		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
 	}
 
-	.navbar-fixed-top{
+	.navbar-fixed-top {
 		top: 0;
 		border-width: 0 0 1px;
 	}
 
-	.navbar-collapse.collapse{
+	.navbar-collapse.collapse {
 		display: none !important;
 	}
 
-	.navbar-nav{
+	.navbar-nav {
 		float: none;
 		margin-top: 7.5px;
 	}
 
-	.navbar-nav > li{
+	.navbar-nav > li {
 		float: none;
 	}
 
-	.navbar-nav > li > a{
+	.navbar-nav > li > a {
 		padding-top: 10px;
 		padding-bottom: 10px;
 		border-right: none;
 	}
 
-	.collapse.in{
+	.collapse.in {
 		display: block !important;
 	}
 

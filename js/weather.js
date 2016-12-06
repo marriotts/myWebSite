@@ -1,9 +1,11 @@
 /*!
- * Weather.js v1.0.
+ * weather.js v1.0.
  * by Simon Marriott
  *
  * Copyright 2016, SJMWebDesigns, All rights reserved
-*/
+ */
+
+
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 

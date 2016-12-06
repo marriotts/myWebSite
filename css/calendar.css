@@ -10,6 +10,8 @@
     color: #fff;
     border-radius: 8%;
     box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 #calendar>p {

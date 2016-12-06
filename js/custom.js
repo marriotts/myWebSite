@@ -1,5 +1,5 @@
 /*!
- * Custom v1.0.
+ * custom.js v1.0.
  * by Simon Marriott
  *
  * Copyright 2016, SJMWebDesigns, All rights reserved

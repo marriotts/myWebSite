@@ -1,3 +1,14 @@
+/*!
+ * calendar.js v1.0.
+ * by Simon Marriott
+ *
+ * Copyright 2016, SJMWebDesigns, All rights reserved
+*/
+
+
+/*jslint browser: true*/
+/*global $, jQuery, alert*/
+
 //this function will set the text value of tags
 function setText(id, val) {
     'use strict';
