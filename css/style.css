@@ -240,19 +240,30 @@ h4 {
     margin-top: -21px !important;
 }
 
-footer {
-    display: block;
-	height: 60px !important;
+#footer {
+    width: 100% !important;
+    display: table;
+	height: 90px !important;
+    line-height: 90px !important;
 	background: #f4f4f4 !important;
 	padding-top: 20px !important;
     color: #0383c0 !important;
 }
 
-.footer-logo {
+#footer-logo{
+    width: 100% !important;
+    vertical-align: middle !important;
     text-transform: none !important;
     font-family: fantasy, sans-serif !important;
     font-size: 21px !important;
-    font-weight: bold;
+    font-weight: bold !important;
+}
+
+#copyright {
+    width: 100% !important;
+    display: table-cell !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
 }
 
 .resume-close {
@@ -384,6 +395,11 @@ img.git-logo {
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+.lead-img {
+    width: 100% !important;
+    margin-bottom: 15px !important;
 }
 
 .img-been {

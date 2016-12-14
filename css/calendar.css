@@ -1,8 +1,9 @@
 #calendar {
     padding-left: 0;
     padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
     display: block;
     width: 145px;
     height: 200px;
