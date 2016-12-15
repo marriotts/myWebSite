@@ -20,6 +20,32 @@ body {
     margin: 0;
 }
 
+#footer {
+    width: 100% !important;
+    display: table;
+	height: 50px !important;
+    line-height: 50px !important;
+	background: #f4f4f4 !important;
+	padding-top: 20px !important;
+    color: #0383c0 !important;
+}
+
+#footer-logo{
+    width: 100% !important;
+    vertical-align: middle !important;
+    text-transform: none !important;
+    font-family: fantasy, sans-serif !important;
+    font-size: 21px !important;
+    font-weight: bold !important;
+}
+
+#copyright {
+    width: 100% !important;
+    display: table-cell !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
 article,
 aside,
 details,
@@ -2923,7 +2949,7 @@ input[type="search"] {
 input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
-  margin-top: 1px \9;
+  margin-top: 1px;
   line-height: normal;
 }
 
@@ -3060,7 +3086,7 @@ input[type="search"] {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   position: absolute;
-  margin-top: 4px \9;
+  margin-top: 4px;
   margin-left: -20px;
 }
 
@@ -7221,7 +7247,7 @@ button.close {
   margin: 1px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #000 \9;
+  background-color: #000;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid #fff;
   border-radius: 10px;
